@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,7 +21,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:src="@drawable/rectangle"
+                android:src="@drawable/rectangle5"
                 android:scaleType="centerCrop"
                 android:scaleX="1.2"
                 android:layout_marginTop="-50dp"/>
@@ -61,17 +62,6 @@
                 android:alpha="0.1"
                 android:src="@drawable/ic_admin_with_cogwheels"
                 android:layout_alignParentLeft="true"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_below="@id/linearLayout1"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="-2dp"
-                android:src="@drawable/rectangle1" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -141,7 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="360dp"
+                android:layout_marginTop="390dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp">
 
@@ -162,7 +152,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="#980022">
+                            android:background="@drawable/rectangle6">
                             <ImageView
                                 android:id="@+id/imageView1"
                                 android:layout_width="50dp"
@@ -206,7 +196,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="#db6b01"
+                            android:background="@drawable/rectangle7"
                             >
                             <ImageView
                                 android:id="@+id/imageView2"
@@ -259,7 +249,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="#007f98">
+                            android:background="@drawable/rectangle8">
                             <ImageView
                                 android:id="@+id/imageView3"
                                 android:layout_width="50dp"
@@ -279,11 +269,12 @@
                                 android:textSize="15sp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"/>
+
                             <Button
+                                android:id="@+id/buttonTeacher"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:id="@+id/buttonTeacher"
-                                android:background="@android:color/transparent"/>
+                                android:background="@android:color/transparent" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -298,7 +289,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="#283593">
+                            android:background="@drawable/rectangle9">
                             <ImageView
                                 android:id="@+id/imageView4"
                                 android:layout_width="50dp"

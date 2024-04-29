@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FAFAFF"
+    android:background="#FFFFFF"
     tools:context=".loginteacherActivity">
     <ScrollView
         android:layout_width="fill_parent"
@@ -60,18 +60,19 @@
                         android:layout_height="match_parent"
 >
 
-                        <RelativeLayout
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/rectangle2"
-                            android:paddingTop="50dp">
+                            android:backgroundTint="#00FFFFFF"
+                            android:padding="40dp">
+
 
                             <EditText
                                 android:id="@+id/adminEditText"
-                                android:layout_width="260dp"
-                                android:layout_height="60dp"
+                                android:layout_width="307dp"
+                                android:layout_height="59dp"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="148dp"
                                 android:background="@drawable/inputs"
                                 android:drawableLeft="@drawable/ic_person_black_24dp"
                                 android:drawablePadding="10dp"
@@ -80,37 +81,38 @@
                                 android:importantForAutofill="no"
                                 android:inputType="text"
                                 android:padding="10dp"
-                                android:textColor="#252529" />
+                                android:textColor="#252529"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
 
                             <Button
                                 android:id="@+id/login"
-                                android:layout_width="171dp"
-                                android:layout_height="106dp"
+                                android:layout_width="304dp"
+                                android:layout_height="46dp"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentTop="true"
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentBottom="true"
-
-
-                                android:layout_marginStart="110dp"
-                                android:layout_marginTop="160dp"
-                                android:layout_marginEnd="110dp"
-
-                                android:layout_marginBottom="30dp"
+                                android:layout_centerHorizontal="true"
                                 android:background="@drawable/button1"
                                 android:fontFamily="@font/open_sans_semibold"
-                                android:text="Login"
+                                android:text="Log in"
                                 android:textAllCaps="false"
                                 android:textColor="#FFFFFF"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
 
                             <EditText
                                 android:id="@+id/adminPasswordEditText"
-                                android:layout_width="260dp"
-                                android:layout_height="60dp"
+                                android:layout_width="309dp"
+                                android:layout_height="59dp"
                                 android:layout_below="@id/adminEditText"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
                                 android:background="@drawable/inputs"
                                 android:drawableLeft="@drawable/ic_lock"
                                 android:drawablePadding="10dp"
@@ -118,9 +120,14 @@
                                 android:hint="Password"
                                 android:inputType="textPassword"
                                 android:padding="10dp"
-                                android:textColor="#252529" />
+                                android:textColor="#252529"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.562" />
 
-                        </RelativeLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
 
