@@ -166,11 +166,4 @@
                 app:layout_constraintVertical_bias="0.863" />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/rectangle1">
-
-    </LinearLayout>
 </RelativeLayout>

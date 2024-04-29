@@ -40,9 +40,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/comfortaa"
+                        android:fontFamily="@font/open_sans_bold"
                         android:text="Admin Login"
-                        android:textColor="#fff"
+                        android:textColor="#0B0606"
                         android:textSize="30sp"
                         android:textStyle="bold" />
 
@@ -65,9 +65,9 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="#010101"
+                            android:background="#00BCD4"
                             android:elevation="10dp"
-                            android:padding="30dp">
+                            android:padding="45dp">
 
                             <EditText
                                 android:id="@+id/adminEditText"
@@ -105,11 +105,11 @@
                                 android:layout_width="200dp"
                                 android:layout_height="50dp"
                                 android:layout_below="@id/adminPasswordEditText"
-                                android:layout_marginLeft="60dp"
-                                android:layout_marginTop="42dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="25dp"
                                 android:background="@drawable/button1"
-                                android:backgroundTint="#4245EF"
-                                android:fontFamily="@font/comfortaa"
+                                android:backgroundTint="#FFC107"
+                                android:fontFamily="@font/open_sans_semibold"
                                 android:paddingBottom="5dp"
                                 android:text="Login"
                                 android:textAllCaps="false"
@@ -121,16 +121,6 @@
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_below="@id/relativelayot"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="61dp"
-                    android:layout_marginBottom="-9dp"
-                    android:background="@drawable/rectangle1">
-
-                </LinearLayout>
             </RelativeLayout>
 
         </LinearLayout>

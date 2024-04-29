@@ -33,16 +33,17 @@
                         android:layout_height="90dp"
                         android:background="@drawable/professor"
                         />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Teacher Login"
-                        android:textColor="#fff"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/comfortaa"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Teacher Login"
+                        android:textColor="#090303"
                         android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:layout_marginTop="10dp"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
                 <RelativeLayout
@@ -57,21 +58,20 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="30dp"
-                        >
+>
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@drawable/rectangle2"
-                            android:padding="50dp">
+                            android:paddingTop="50dp">
 
                             <EditText
                                 android:id="@+id/adminEditText"
                                 android:layout_width="260dp"
                                 android:layout_height="60dp"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="52dp"
+                                android:layout_marginTop="2dp"
                                 android:background="@drawable/inputs"
                                 android:drawableLeft="@drawable/ic_person_black_24dp"
                                 android:drawablePadding="10dp"
@@ -82,46 +82,47 @@
                                 android:padding="10dp"
                                 android:textColor="#252529" />
 
+                            <Button
+                                android:id="@+id/login"
+                                android:layout_width="171dp"
+                                android:layout_height="106dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+
+
+                                android:layout_marginStart="110dp"
+                                android:layout_marginTop="160dp"
+                                android:layout_marginEnd="110dp"
+
+                                android:layout_marginBottom="30dp"
+                                android:background="@drawable/button1"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="Login"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp" />
+
                             <EditText
                                 android:id="@+id/adminPasswordEditText"
                                 android:layout_width="260dp"
                                 android:layout_height="60dp"
-                                android:textColor="#252529"
-                                android:fontFamily="@font/comfortaa"
+                                android:layout_below="@id/adminEditText"
+                                android:layout_centerHorizontal="true"
                                 android:layout_marginTop="10dp"
                                 android:background="@drawable/inputs"
                                 android:drawableLeft="@drawable/ic_lock"
                                 android:drawablePadding="10dp"
-                                android:layout_below="@id/adminEditText"
+                                android:fontFamily="@font/comfortaa"
                                 android:hint="Password"
-                                android:layout_centerHorizontal="true"
                                 android:inputType="textPassword"
-                                android:padding="10dp" />
+                                android:padding="10dp"
+                                android:textColor="#252529" />
 
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_below="@id/relativelayot"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="50dp"
-                    android:background="@drawable/rectangle1">
-
-                    <Button
-                        android:id="@+id/login"
-                        android:layout_width="200dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="87dp"
-                        android:layout_marginTop="34dp"
-                        android:background="@drawable/button1"
-                        android:text="Login"
-                        android:textAllCaps="false"
-                        android:textColor="#d5dadd"
-                        android:textSize="20sp" />
-                </LinearLayout>
 
             </RelativeLayout>
 

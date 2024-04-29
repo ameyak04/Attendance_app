@@ -38,8 +38,8 @@ public class teacherlogin extends AppCompatActivity implements AdapterView.OnIte
         //setSupportActionBar(mToolbar);
         //getSupportActionBar().setTitle(message+"'s Dashboard  - "+date);
 
-        TextView txtView = (TextView) findViewById(R.id.textView1);
-        txtView.setText("Welcome : "+message);
+        TextView txtView = (TextView) findViewById(R.id.textView2);
+        txtView.setText(message);
         spinner2.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
         List<String> categories = new ArrayList<String>();
         categories.add("CSE");

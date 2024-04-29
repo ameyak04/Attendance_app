@@ -275,16 +275,5 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_below="@id/lay2"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/rectangle1"
-        tools:ignore="NotSibling,UnknownId">
-
-
-    </LinearLayout>
 </RelativeLayout>
 
