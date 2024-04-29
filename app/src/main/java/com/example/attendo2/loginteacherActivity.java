@@ -2,6 +2,7 @@ package com.example.attendo2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,7 +42,7 @@ public class loginteacherActivity extends AppCompatActivity {
                 basket.putString("message", userid);
 
                 ref = FirebaseDatabase.getInstance().getReference();
-                DatabaseReference dbuser = ref.child("Teacher").child(userid);
+                DatabaseReference dbuser = ref.child("Teacher").child("Subjects").child(userid);
 
 
                 dbuser.addListenerForSingleValueEvent(new ValueEventListener() {

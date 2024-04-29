@@ -2,6 +2,7 @@ package com.example.attendo2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -53,12 +54,14 @@ public class CRLogin extends AppCompatActivity {
                 DatabaseReference dbuser = ref.child("CSEB_CR");
 
 
+                Log.d("DB_USER_REFERENCE", dbuser.toString());
+
                 dbuser.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                        customLoadingBar.dismissLoader();
                         dbpassword = dataSnapshot.getValue().toString();
-                       // Toast.makeText(CRLogin.this, dbpassword, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CRLogin.this, dbpassword, Toast.LENGTH_SHORT).show();
                         verify(dbpassword);
                     }
 

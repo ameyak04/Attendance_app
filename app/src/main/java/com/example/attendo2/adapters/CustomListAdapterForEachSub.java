@@ -62,12 +62,12 @@ public class CustomListAdapterForEachSub extends BaseAdapter implements View.OnC
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.option:
-//                showPopupMenu(view);
-                Toast.makeText(context, "Lol You just clicked Me!!!", Toast.LENGTH_SHORT).show();
-                break;
-        }
+//        switch (view.getId()){
+//            case R.id.option:
+////                showPopupMenu(view);
+//                Toast.makeText(context, "Lol You just clicked Me!!!", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
     }
 
 

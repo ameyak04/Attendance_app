@@ -62,11 +62,8 @@ public class CustomListAdapterallAtt extends BaseAdapter implements View.OnClick
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.option:
-//                showPopupMenu(view);
-                Toast.makeText(context, "Lol You just clicked Me!!!", Toast.LENGTH_SHORT).show();
-                break;
+        if (view.getId() == R.id.option) {//                showPopupMenu(view);
+            Toast.makeText(context, "Lol You just clicked Me!!!", Toast.LENGTH_SHORT).show();
         }
     }
 

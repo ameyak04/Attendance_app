@@ -13,8 +13,10 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:label">
-        <activity android:name=".WebViewActivity"></activity>
+        tools:replace="android:label"
+        tools:targetApi="donut"
+        tools:ignore="RtlEnabled">
+        <activity android:name=".WebViewActivity" />
         <activity android:name=".Resources0" />
         <activity android:name=".Resources" />
         <activity android:name=".KafleSubjects" />
@@ -33,7 +35,8 @@
         <activity android:name=".loginstudent" />
         <activity android:name=".adminLoginActivity" />
         <activity android:name=".DashboardActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
