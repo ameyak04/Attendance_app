@@ -2,18 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".adminlogin"
-    >
+    android:background="@drawable/login_bg">
 
-    <include
-        android:id="@+id/ftoolbar"
-        layout="@layout/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        tools:layout_editor_absoluteX="8dp"
-        />
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -38,11 +30,6 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/ic_admin_with_cogwheels" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -51,7 +38,7 @@
 
                         android:fontFamily="@font/comfortaa"
                         android:text="Admin"
-                        android:textColor="#fff"
+                        android:textColor="#050505"
                         android:textSize="30sp"
                         android:textStyle="bold" />
 
@@ -348,11 +335,7 @@
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_below="@+id/lay1"
-                    android:src="@drawable/rectangle1" />
+
             </RelativeLayout>
 
         </LinearLayout>

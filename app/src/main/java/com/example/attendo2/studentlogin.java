@@ -48,11 +48,11 @@ public class studentlogin extends AppCompatActivity {
         message1 = bundle.getString("message1");
      //   mToolbar = (Toolbar) findViewById(R.id.ftoolbar);
        // mToolbar.setTitle(message + "'s Dashboard" + "(" + date + ")");
-        TextView txtView = (TextView) findViewById(R.id.textView1);
+        TextView txtView = (TextView) findViewById(R.id.textView2);
 
 
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-        txtView.setText("Welcome :" + message);
+        txtView.setText(message);
 
 
 

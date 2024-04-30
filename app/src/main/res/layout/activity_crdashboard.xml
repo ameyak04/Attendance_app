@@ -13,19 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/comfortaa"
+        android:fontFamily="@font/open_sans_bold"
 
         android:layout_marginLeft="30dp"
         android:layout_marginTop="100dp"
         android:layout_marginRight="30dp"
-        android:background="@drawable/rectangle2"
         android:focusableInTouchMode="false"
         android:forceHasOverlappingRendering="true"
-        android:gravity="center"
         android:padding="6dp"
-        android:text="Welcome CR "
+        android:text="Welcome "
 
-        android:textColor="#ffff"
+        android:textColor="#020101"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +38,7 @@
         android:layout_below="@id/textViewCRD"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
 
@@ -78,7 +76,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#6A1B9A">
+                        android:background="@drawable/rectangle3">
 
                         <com.airbnb.lottie.LottieAnimationView
                             android:id="@+id/animation_view222"
@@ -99,7 +97,7 @@
                             android:layout_centerInParent="true"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/comfortaa"
+                            android:fontFamily="@font/open_sans_semibold"
                             android:text="Take Attendance"
                             android:textColor="#fff"
                             android:textSize="16sp"
@@ -126,7 +124,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#283593">
+                        android:background="@drawable/rectangle8">
 
                         <ImageView
                             android:id="@+id/imageView2"
@@ -143,7 +141,7 @@
                             android:layout_centerInParent="true"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/comfortaa"
+                            android:fontFamily="@font/open_sans_semibold"
                             android:text="View Records"
                             android:textColor="#fff"
                             android:textSize="16sp"
@@ -161,21 +159,66 @@
 
             </LinearLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:background="@drawable/button1"
-                android:fontFamily="@font/comfortaa"
-                android:onClick="logoutCRD"
-                android:text="Logout"
-                android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:layout_marginRight="50dp"-->
+<!--                android:background="@drawable/button1"-->
+<!--                android:fontFamily="@font/comfortaa"-->
+<!--                android:onClick="logoutCRD"-->
+<!--                android:text="Logout"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="20sp" />-->
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:foregroundGravity="right"
+            android:onClick="logoutCRD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/baseline_logout_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="110dp"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/open_sans_bold"
+            android:forceHasOverlappingRendering="true"
+            android:text="CR "
+            android:padding="6dp"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.09"
+            tools:fontFeatureSettings="66" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </RelativeLayout>

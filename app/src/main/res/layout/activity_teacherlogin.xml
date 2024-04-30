@@ -23,8 +23,6 @@
         android:focusableInTouchMode="false"
         android:fontFamily="@font/open_sans_bold"
         android:forceHasOverlappingRendering="true"
-        android:gravity="center"
-
         android:padding="6dp"
         android:text="Welcome, "
         android:textAlignment="textStart"
@@ -111,7 +109,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
 
-                            android:background="@drawable/rectangle4"
+                            android:background="@drawable/rectangle3"
                             android:onClick="takeAttendanceButton" />
 
                         <com.airbnb.lottie.LottieAnimationView
@@ -170,7 +168,7 @@
                             android:id="@+id/buttonStudent"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/rectangle3"
+                            android:background="@drawable/rectangle8"
                             android:elevation="15dp"
                             android:onClick="previous_records" />
 
@@ -231,13 +229,14 @@
             android:id="@+id/imageView7"
             android:layout_width="32dp"
             android:layout_height="48dp"
-            android:layout_marginStart="360dp"
             android:foregroundGravity="right"
             android:onClick="logoutTeacher"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
+            app:layout_constraintVertical_bias="0.025"
             app:srcCompat="@drawable/baseline_logout_24" />
 
         <TextView
@@ -247,7 +246,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
 
-            android:layout_marginStart="44dp"
+            android:layout_marginStart="28dp"
 
             android:layout_marginTop="110dp"
             android:focusableInTouchMode="false"
@@ -264,7 +263,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.084"
+            app:layout_constraintVertical_bias="0.092"
             tools:fontFeatureSettings="66" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

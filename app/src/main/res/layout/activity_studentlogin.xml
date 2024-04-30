@@ -5,28 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".studentlogin"
-    android:background="#FAFAFF">
+    android:background="@drawable/login_bg">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ftoolbar"
-        android:padding="10dp"
-        android:fontFamily="@font/comfortaa"
-        android:layout_gravity="center"
-        android:background="@drawable/rectangle"
-        android:gravity="center"
-        android:text="Welcome:id"
-        android:textColor="#fff"
-        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Welcome,"
+        android:textColor="#000000"
+        android:textSize="30dp"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/ftoolbar"
-
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="0dp"
@@ -49,10 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rectangle2"
-            android:orientation="horizontal"
-            android:padding="30dp">
+            android:layout_marginTop="250dp"
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -85,7 +79,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/comfortaa"
+                        android:fontFamily="@font/open_sans_semibold"
                         android:text="View Attendance"
                         android:textColor="#fff"
                         android:textSize="16sp"
@@ -117,7 +111,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#9C3DF3">
+                    android:background="#F33676">
 
                     <ImageView
                         android:id="@+id/imageView2"
@@ -133,7 +127,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/comfortaa"
+                        android:fontFamily="@font/open_sans_semibold"
                         android:text="Logout"
                         android:textColor="#fff"
                         android:textSize="16sp"
@@ -175,10 +169,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rectangle2"
-            android:orientation="horizontal"
-            android:padding="30dp">
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -193,7 +185,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#3D73DD">
+                    android:background="#3D73DD"
+                    >
 
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/resourcesCardview"
@@ -211,7 +204,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/comfortaa"
+                        android:fontFamily="@font/open_sans_semibold"
                         android:text="Resources"
                         android:textColor="#fff"
                         android:textSize="16sp"
@@ -239,7 +232,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#FFA94D"
+                    android:background="#00BCD4"
+
                     >
 
                     <ImageView
@@ -256,7 +250,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/comfortaa"
+                        android:fontFamily="@font/open_sans_semibold"
                         android:text="Change Password"
                         android:textColor="#fff"
                         android:textSize="16sp"
@@ -273,7 +267,50 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="32dp"
+            android:layout_height="48dp"
+            android:foregroundGravity="right"
+            android:onClick="logoutStudent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/baseline_logout_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginStart="28dp"
+
+            android:layout_marginTop="110dp"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/open_sans_bold"
+            android:forceHasOverlappingRendering="true"
+            android:padding="6dp"
+            android:text="id"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.092"
+            tools:fontFeatureSettings="66" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
 

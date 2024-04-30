@@ -24,7 +24,7 @@
         android:layout_below="@id/animation_viewInfo"
         android:layout_centerInParent="true"
         android:layout_marginTop="72dp"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/open_sans_semibold"
         android:text="This app makes life easy for students by helping them to check their attendance in a single click and for teachers and class representatives by reducing all the paper work. This app maintains all data in an online secure database. It also creates an offline copy of the attendance if required. "
         android:textAlignment="center"
         android:textColor="#fff"
